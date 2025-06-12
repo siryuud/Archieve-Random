@@ -244,12 +244,22 @@ window.onload = () => {
   // About button logic
   document.getElementById("aboutBtn").onclick = () => {
     const html = `
-      <div class="about-content">
-        <h2>About</h2>
-        <p>이 사이트는 가수 유우리(Yuuri)의 음악, 영상, 라이브 등 다양한 자료들을 감성적으로 아카이빙한 개인 프로젝트입니다.</p>
-        <p>내가 좋아하는 음악들 중 오늘은 어떤 걸 들어볼까? 그런 느낌으로 자유롭게 탐색하며 즐기기 위한 목적으로 제작되었습니다.</p>
-      </div>
-    `;
+    <div class="about-content">
+      <h2>About Yuuri</h2>
+      <img src="yuuri.webp" alt="Yuuri Image" style="width: 200px; border-radius: 8px; margin-bottom: 16px;">
+      <ul style="list-style: none; padding: 0; line-height: 1.8;">
+        <li><strong>본명:</strong> 키무라 유우리 (木村 優里)</li>
+        <li><strong>출생:</strong> 1994년 3월 23일 (31세)</li>
+        <li><strong>출신:</strong> 도쿄 치바현 치바시 미하마구 마쿠하리</li>
+        <li><strong>국적:</strong> 일본</li>
+        <li><strong>신체:</strong> 166.9cm</li>
+        <li><strong>데뷔:</strong> 2016년 THE BUGZY</li>
+        <li><strong>MBTI:</strong> ISTP</li>
+        <li><strong>장르:</strong> J-POP, 모던 록</li>
+        <li><strong>소속사:</strong> 소니 뮤직 엔터테인먼트 재팬</li>
+      </ul>
+    </div>
+  `;
     openPanel(html);
   };
 
