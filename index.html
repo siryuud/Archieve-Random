@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yuuri : Archive</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family: "SUIT-Regular";
+        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2")
+          format("woff2");
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="site-title">Yuuri : Archive</h1>
+
+      <div class="menu" id="menuButtons">
+        <button id="keyBtn">Filter</button>
+        <button id="listViewBtn">List View</button>
+        <button id="aboutBtn">About</button>
+      </div>
+
+      <div id="slidePanel" class="slide hidden">
+        <button id="closePanel">✕</button>
+        <div id="slideContent">
+          <div class="key-toggle">
+            <label
+              ><input type="checkbox" data-type="album" checked /> Album</label
+            >
+            <label
+              ><input type="checkbox" data-type="single" checked />
+              Single</label
+            >
+            <label
+              ><input type="checkbox" data-type="track" checked /> Track</label
+            >
+            <label
+              ><input type="checkbox" data-type="live" checked /> Live</label
+            >
+            <label
+              ><input type="checkbox" data-type="collab" checked />
+              Collaboration</label
+            >
+            <label
+              ><input type="checkbox" data-type="cover" checked /> Cover</label
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="canvas"></div>
+    <div id="sidebar" class="sidebar hidden">
+      <button id="closeSidebar">✕</button>
+      <div id="sidebarContent"></div>
+    </div>
+    <div id="overlay-blur"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+    <script src="data_v2_full.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
